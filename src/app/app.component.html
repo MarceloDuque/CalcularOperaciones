@@ -1,0 +1,89 @@
+<body >
+
+   <div style="text-align:center"  style="color: brown">
+    <h1>
+      Operaciones Matemáticas
+    </h1>
+    <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+  </div>
+  <h2 style="color: darkred">Suma</h2>
+  <ul style="color: blue">
+  <div class="marce" >
+    <input id="marce"  type="number" [(ngModel)]="numero1" placeholder="Ingrese un número"/>
+    <br><br>
+     <input id="marce" type="number" [(ngModel)]="numero2" placeholder="Ingrese un número"/>
+    </div>
+    <br>
+  <div>
+    <ul>
+     <button (click)="suma()"> + </button>
+
+    </ul>
+    </div>
+    <br>
+    <div>
+       RESULTADO: {{resultado}}
+      </div>
+  </ul>
+
+  <h2 style="color:rgb(54, 141, 122)">Resta</h2>
+  <ul style="color: blue">
+  <div>
+    <input id="marce" type="number" [(ngModel)]="numero3" placeholder="Ingrese un número"/>
+    <br><br>
+     <input id="marce" type="number" [(ngModel)]="numero4" placeholder="Ingrese un número"/>
+    </div>
+    <br>
+  <div>
+    <ul>
+
+     <button (click)="resta()"> - </button>
+
+    </ul>
+    </div>
+    <br>
+    <div>
+       RESULTADO: {{resultado1}}
+      </div>
+  </ul>
+
+  <h2 style="color:chocolate">Multiplicación</h2>
+  <ul style="color: blue">
+  <div>
+    <input id="marce" type="number" [(ngModel)]="numero5" placeholder="Ingrese un número"/>
+    <br><br>
+     <input id="marce" type="number" [(ngModel)]="numero6" placeholder="Ingrese un número"/>
+    </div>
+    <br>
+  <div>
+    <ul>
+
+     <button (click)="multiplicacion()"> * </button>
+
+    </ul>
+    </div>
+    <br>
+    <div>
+       RESULTADO: {{resultado2}}
+      </div>
+  </ul>
+
+  <h2 style="color: rgb(43, 226, 83)">División</h2>
+  <ul style="color: blue">
+  <div>
+    <input id="marce" type="number" [(ngModel)]="numero7" placeholder="Ingrese un número"/>
+    <br><br>
+     <input id="marce" type="number" [(ngModel)]="numero8" placeholder="Ingrese un número"/>
+    </div>
+    <br>
+  <div>
+    <ul>
+       <button (click)="division()"> / </button>
+    </ul>
+    </div>
+    <br>
+    <div>
+       RESULTADO: {{resultado3}}
+      </div>
+  </ul>
+</body>
